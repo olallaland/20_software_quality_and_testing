@@ -55,7 +55,13 @@
                                         {{/each}}
                                     </td>
                                     <td class="active"><label>质管</label></td>
-                                    <td>{{question.qualityAdmin.fullName}}</td>
+                                    <!--<td>{{question.qualityAdmin.fullName}}</td>-->
+                                    <td>
+                                        {{#each question.qualityadmins}}
+                                        <p>{{this.fullName}}</p>
+                                        {{/each}}
+                                    </td>
+
                                 </tr>
                                 <tr>
                                     <td class="active"><label>出题期限</label></td>

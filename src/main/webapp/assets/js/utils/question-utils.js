@@ -242,9 +242,9 @@ QuestionUtils.loadQAQuestions = function (username, callback) {
  * @param callback
  * @returns {*}
  */
-QuestionUtils.changeStatus = function (questionId,nextStatusId,callback) {
+QuestionUtils.changeStatus = function (questionId,nextStatusId,username,callback) {
     var url = CONTEXT.ctx + '/web/question/change-status.action';
-    var deferred= AjaxUtils.postData(url,{questionId: questionId, statusId: nextStatusId});
+    var deferred= AjaxUtils.postData(url,{questionId: questionId, statusId: nextStatusId,username: username});
     if (_.isUndefined(callback) || _.isNull(callback)) {
         return deferred;
     }

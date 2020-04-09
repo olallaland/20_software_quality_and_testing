@@ -15,6 +15,7 @@ public class ChangeQuestionStatusAction extends BaseQuestionAction {
 
     private int questionId;
     private int statusId;
+    private String username;
 
     private Question question;
     private QuestionStatus nextStatus;
@@ -53,7 +54,42 @@ public class ChangeQuestionStatusAction extends BaseQuestionAction {
             return Constants.RESULT_NOT_MODIFIED;
         }
 
+        QuestionStatus tempStatus = question.getStatus();
         question.setStatus(nextStatus);
+        //发布: 判断如果此时是质管员发布，则判断是否全部质管员同意发布
+        if(statusId==Constants.PUNLISH&&tempStatus.isAccessibleByQualityAdmin()){
+            //是否发布(质管员全部同意)
+            int currentQaPublishs = question.getQaPulishs() == null ? 0:question.getQaPulishs();
+            if((currentQaPublishs+1) == question.getQaNums()){
+                question.setStatus(nextStatus);
+                if(question.getQaUser1() == null || question.getQaUser1().length() == 0){
+                    question.setQaUser1(username);
+                }
+                else if(question.getQaUser2() == null || question.getQaUser2().length() == 0){
+                    question.setQaUser2(username);
+                }
+                else{
+                    question.setQaUser3(username);
+                }
+            }
+            else{
+                question.setStatus(tempStatus);
+                if(question.getQaUser1() == null || question.getQaUser1().length() == 0){
+                    question.setQaUser1(username);
+                }
+                else{
+                    question.setQaUser2(username);
+                }
+            }
+            question.setQaPulishs(currentQaPublishs+1);
+        }
+        //修改:
+        if(statusId==Constants.MODIFY&&tempStatus.isAccessibleByQualityAdmin()) {
+            question.setQaPulishs(0);
+            question.setQaUser1(null);
+            question.setQaUser2(null);
+            question.setQaUser3(null);
+        }
         questionService.saveOrUpdate(question);
         return null;
     }
@@ -68,5 +104,13 @@ public class ChangeQuestionStatusAction extends BaseQuestionAction {
 
     public QuestionStatus getStatus() {
         return nextStatus;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }

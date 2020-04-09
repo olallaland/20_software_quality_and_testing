@@ -2,10 +2,7 @@ package cn.cstqb.exam.testmaker.actions.projects.current;
 
 import cn.cstqb.exam.testmaker.actions.question.BaseQuestionAction;
 import cn.cstqb.exam.testmaker.configuration.Constants;
-import cn.cstqb.exam.testmaker.entities.Project;
-import cn.cstqb.exam.testmaker.entities.Question;
-import cn.cstqb.exam.testmaker.entities.QuestionRole;
-import cn.cstqb.exam.testmaker.entities.User;
+import cn.cstqb.exam.testmaker.entities.*;
 import com.google.common.collect.Lists;
 import freemarker.template.TemplateException;
 import org.apache.commons.mail.EmailException;
@@ -20,7 +17,6 @@ import java.io.IOException;
  * Time: 22:50
  */
 public class SaveProjectQuestion extends BaseQuestionAction {
-
     /**
      * The real action should be defined in this method. Do not use execute. otherwise you get nothing
      *

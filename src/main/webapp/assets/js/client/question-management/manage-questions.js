@@ -32,6 +32,8 @@
      * Definition of model variables
      */
     var selectedQuestion={}, questions,transitions;
+    var selectedQuestionQAs = {};
+    var selectedQualityAdminNum = 0; //主持人选择的质管人数，用于判断是否重复
     var syllabus=CONTEXT.project.syllabus;
     var selectedChapter={}, chapters;
     var knowledgePoints, languages, questionTypes;
@@ -137,11 +139,47 @@
         selectedQuestion.reviewers=[projectUsers[index]];
     });
 
-    qaSelectList.on('select2:select',function (e) {
+
+    qaSelectList.change(function () {
         console.log('selecting QA');
-        var index = $(this).find(':selected').data('index');
-        selectedQuestion.qualityAdmin=projectUsers[index];
+        selectedQuestionQAs.qualityAdmin1 = undefined;
+        selectedQuestionQAs.qualityAdmin2 = undefined;
+        selectedQuestionQAs.qualityAdmin3 = undefined;
+        selectedQualityAdminNum = 0;
+        //var index = $(this).find(':selected').data('index');
+        var o = document.getElementById("question-qa-list").getElementsByTagName('option');
+        var index = 1;
+        for(var i = 0; i < o.length; i++){
+            if(o[i].selected){
+                //alert(i);
+                selectedQualityAdminNum += 1;
+                selectedQuestionQAs['qualityAdmin'+index] = projectUsers[i-1];
+                index += 1;
+            }
+        }
+        selectedQuestion.qaNums = selectedQualityAdminNum;
+        //selectedQuestion.qualityadmins = [selectedQuestionQAs.qualityAdmin1];
+        selectedQuestion.qualityAdmin = selectedQuestionQAs.qualityAdmin1;
+        //alert("change"+" selectedQualityAdminNum="+selectedQualityAdminNum);
     });
+    // qaSelectList.on('select2:select',function (e) {
+    //     console.log('selecting QA');
+    //     selectedQuestion.qualityAdmin1 = undefined;
+    //     selectedQuestion.qualityAdmin2 = undefined;
+    //     selectedQuestion.qualityAdmin3 = undefined;
+    //     selectedQualityAdminNum = 0;
+    //     //var index = $(this).find(':selected').data('index');
+    //     var o = document.getElementById("question-qa-list").getElementsByTagName('option');
+    //     var index = 1;
+    //     for(var i = 0; i < o.length; i++){
+    //         if(o[i].selected){
+    //             //alert(i);
+    //             selectedQualityAdminNum += 1;
+    //             selectedQuestion['qualityAdmin'+index] = projectUsers[i-1];
+    //         }
+    //     }
+    //     //selectedQuestion.qualityAdmin=projectUsers[index];
+    // });
 
     toggleFormBtn.click(function (e) {
         newQuestionModal.modal('toggle');
@@ -203,6 +241,15 @@
         selectedQuestion.authoringFinishDate = DatePickerUtil.getDate(authorFinishDate);
         selectedQuestion.reviewingStartDate = DatePickerUtil.getDate(reviewStartDate);
         selectedQuestion.reviewingFinishDate = DatePickerUtil.getDate(reviewFinishDate);
+        if(selectedQualityAdminNum === 1){
+            selectedQuestion.qualityadmins = [selectedQuestionQAs.qualityAdmin1];
+        }
+        else if(selectedQualityAdminNum === 2){
+            selectedQuestion.qualityadmins = [selectedQuestionQAs.qualityAdmin1,selectedQuestionQAs.qualityAdmin2];
+        }
+        else if(selectedQualityAdminNum === 3){
+            selectedQuestion.qualityadmins = [selectedQuestionQAs.qualityAdmin1,selectedQuestionQAs.qualityAdmin2,selectedQuestionQAs.qualityAdmin3];
+        }
     }
 
     function initNewQuestionModal() {
@@ -278,7 +325,16 @@
         questionTypeSelectList.val(selectedQuestion.type.id).trigger('change');
         questionLanguageSelectList.val(selectedQuestion.language.id).trigger('change');
         populateUserSelectList(qaSelectList).done(function () {
-            qaSelectList.val(selectedQuestion.qualityAdmin.id).trigger('change');
+            var qaUsers = selectedQuestion.qualityadmins;
+            var arr = [];
+            var index = 0;
+            for(var i = 0; i < qaUsers.length; i++){
+                if(qaUsers[i]){
+                    arr[index] = parseInt(qaUsers[i].id);
+                    index += 1;
+                }
+            }
+            qaSelectList.val(arr).trigger('change');
         });
     }
 
@@ -291,7 +347,7 @@
             Dialogs.warning('请选择作者！');
             return false;
         }
-        if (qaSelectList.val() === '') {
+        if (selectedQualityAdminNum === 0) {
             Dialogs.warning('请选择质管！');
             return false;
         }
@@ -302,13 +358,21 @@
 
         var formUsers=[];
         formUsers.push(authorSelectList.val());
-        if(formUsers.indexOf(qaSelectList.val()) === -1) {
-            formUsers.push(qaSelectList.val());
+        // if(formUsers.indexOf(qaSelectList.val()) === -1) {
+        //     formUsers.push(qaSelectList.val());
+        // }
+        var o = document.getElementById("question-qa-list").getElementsByTagName('option');
+        for(var i = 0; i < o.length; i++){
+            if(o[i].selected){
+                if(formUsers.indexOf(o[i].value) === -1){
+                    formUsers.push(o[i].value);
+                }
+            }
         }
         if(formUsers.indexOf(reviewerSelectList.val()) === -1) {
             formUsers.push(reviewerSelectList.val());
         }
-        if (formUsers.length <3) {
+        if (formUsers.length < (selectedQualityAdminNum+2)) {
             Dialogs.error("作者、评审和终审不能为同一人，请确认！");
             return false;
         }

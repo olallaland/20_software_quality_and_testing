@@ -36,7 +36,12 @@
                     <span>{{fullName}}</span>
                 {{/each}}
             </td>
-            <td>{{qualityAdmin.fullName}}</td>
+            <!--<td>{{qualityAdmin.fullName}}</td>-->
+            <td>
+                {{#each qualityadmins}}
+                <span>{{fullName}}</span>
+                {{/each}}
+            </td>
             <td>{{date updatedOn}}</td>
             {{#if ../showActions}}
             <td>
