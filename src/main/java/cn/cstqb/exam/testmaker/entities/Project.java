@@ -22,6 +22,10 @@ public class Project extends AbstractBaseEntity {
     @Column(nullable = false,unique = true)
     private String name;
 
+    private String alias;
+
+    private String tag;
+
     @OneToOne
     @JoinColumn(name = "FACILITATOR_ID", nullable = false)
     private User facilitator;
@@ -218,5 +222,21 @@ public class Project extends AbstractBaseEntity {
     @Override
     public boolean validate() {
         return !Strings.isNullOrEmpty(name) && facilitator!=null;
+    }
+
+    public String getAlias() {
+        return alias;
+    }
+
+    public void setAlias(String alias) {
+        this.alias = alias;
+    }
+
+    public String getTag() {
+        return tag;
+    }
+
+    public void setTag(String tag) {
+        this.tag = tag;
     }
 }

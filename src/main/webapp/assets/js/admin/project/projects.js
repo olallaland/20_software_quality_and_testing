@@ -196,6 +196,8 @@
             var projectIdFieldVal = idInput.val();
             selected.id = projectIdFieldVal === '' ? null : projectIdFieldVal;
             selected.name=createProjectForm.find('[name="name"]').val();
+            selected.alias = createProjectForm.find('[name="alias"]').val();
+            selected.tag = createProjectForm.find('[name="tag"]').val();
             selected.facilitator = facilitator;
             facilitatorList.val(selected.facilitator.id);
             if (syllabusSelectList.val()!=='') {
@@ -210,7 +212,7 @@
 
             selected.startDate = DatePickerUtil.getDate(startDateInput);
             selected.finishDate = DatePickerUtil.getDate(finishDateInput);
-
+            
             console.log('updated model in bindToModel');
             console.dir(selected);
         }
@@ -221,6 +223,8 @@
         function bindRowToForm() {
             createProjectForm.find('[name="id"]').val(selected.id);
             createProjectForm.find('[name="name"]').val(selected.name);
+            createProjectForm.find('[name="alias"]').val(selected.alias);
+            createProjectForm.find('[name="tag"]').val(selected.tag);
             facilitator=selected.facilitator;
             status=selected.status;
             if (selected.syllabus) {

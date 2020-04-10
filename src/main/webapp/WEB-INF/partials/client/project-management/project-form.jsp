@@ -12,6 +12,18 @@
         </div>
     </div>
     <div class="form-group">
+        <label class="col-md-5 col-lg-4 control-label">项目别名</label>
+        <div class="col-md-7">
+            <input id="project-alias" name="alias" value="${PROJECT.alias}" type="text" class="form-control" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-5 col-lg-4 control-label">项目标签</label>
+        <div class="col-md-7">
+            <input id="project-tag" name="tag" value="${PROJECT.tag}" type="text" class="form-control" disabled>
+        </div>
+    </div>
+    <div class="form-group">
         <label class="col-md-5 col-lg-4 control-label">大纲</label>
         <div class="col-md-7">
             <input class="form-control" id="project-syllabus" name="name" value="${PROJECT.syllabus.level} ${PROJECT.syllabus.version}" type="text" disabled>
