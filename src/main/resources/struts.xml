@@ -23,10 +23,20 @@
     <include file="struts-question.xml"/>
     <include file="struts-review.xml"/>
     <include file="struts-reporting.xml"/>
+    <include file="struts-examPaper.xml"/>
+
+<!--    <package name="simpleton" extends="struts-default,json-default">-->
+<!--        <action name="JsonAction" class="cn.cstqb.exam.testmaker.actions.projects.CreatePaperAction" method="execute">-->
+<!--&lt;!&ndash;          <result type="json">&ndash;&gt;-->
+<!--&lt;!&ndash;              <param name="root">result</param>&ndash;&gt;-->
+<!--&lt;!&ndash;          </result>&ndash;&gt;-->
+<!--        </action>-->
+<!--    </package>-->
 
     <bean class="cn.cstqb.exam.testmaker.converters.JSONDatePopulator" name="jsonDateParser"/>
 
     <package name="default" namespace="/web" extends="json-default,struts-default">
+
         <result-types>
             <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"/>
             <!--<result-type name="json" class="org.apache.struts2.json.JSONResult"/>-->

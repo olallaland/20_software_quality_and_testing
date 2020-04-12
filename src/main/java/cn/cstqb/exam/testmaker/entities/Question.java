@@ -73,18 +73,6 @@ public class Question extends AbstractBaseEntity {
     )
     private Set<User> reviewers;
 
-    @ManyToMany
-    @JoinTable(
-            joinColumns = {
-                    @JoinColumn(name = "question_id"),
-            },
-            inverseJoinColumns = {
-                    @JoinColumn(name = "quality_admin_id")
-            }
-    )
-    private Set<User> qualityadmins;
-
-
     @Transient
     @OneToMany(mappedBy = "question")
     private Set<QuestionChoice> choices;
@@ -139,21 +127,6 @@ public class Question extends AbstractBaseEntity {
     private String customField2;
     @JsonIgnore
     private String customField3;
-
-    @JsonIgnore
-    private Integer qaPulishs;
-
-    @JsonIgnore
-    private Integer qaNums;
-
-    @JsonIgnore
-    private String qaUser1;
-
-    @JsonIgnore
-    private String qaUser2;
-
-    @JsonIgnore
-    private String qaUser3;
 
     public Question(String stem, int difficulty, QuestionLanguage language,
                     QuestionType type, short score, Project project, User author) {
@@ -481,53 +454,5 @@ public class Question extends AbstractBaseEntity {
                 && type != null
                 && language != null
                 ;
-    }
-
-    public Set<User> getQualityadmins() {
-        return qualityadmins;
-    }
-
-    public void setQualityadmins(Set<User> qualityadmins) {
-        this.qualityadmins = qualityadmins;
-    }
-
-    public Integer getQaPulishs() {
-        return qaPulishs;
-    }
-
-    public void setQaPulishs(Integer qaPulishs) {
-        this.qaPulishs = qaPulishs;
-    }
-
-    public Integer getQaNums() {
-        return qaNums;
-    }
-
-    public void setQaNums(Integer qaNums) {
-        this.qaNums = qaNums;
-    }
-
-    public String getQaUser1() {
-        return qaUser1;
-    }
-
-    public void setQaUser1(String qaUser1) {
-        this.qaUser1 = qaUser1;
-    }
-
-    public String getQaUser2() {
-        return qaUser2;
-    }
-
-    public void setQaUser2(String qaUser2) {
-        this.qaUser2 = qaUser2;
-    }
-
-    public String getQaUser3() {
-        return qaUser3;
-    }
-
-    public void setQaUser3(String qaUser3) {
-        this.qaUser3 = qaUser3;
     }
 }

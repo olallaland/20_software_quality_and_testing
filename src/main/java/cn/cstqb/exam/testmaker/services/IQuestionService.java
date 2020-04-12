@@ -12,7 +12,6 @@ public interface IQuestionService {
 	 * @param question
 	 */
 	void saveOrUpdate(Question question);
-
 	/**
 	 * delete a question
 	 * @param question

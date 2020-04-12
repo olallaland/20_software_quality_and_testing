@@ -1,7 +1,6 @@
 package cn.cstqb.exam.testmaker.actions.projects.current;
 
 import cn.cstqb.exam.testmaker.entities.Question;
-import cn.cstqb.exam.testmaker.entities.User;
 
 import java.util.List;
 

@@ -1,3 +1,10 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: lanping
+  Date: 2020/4/10
+  Time: 16:38
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <%-- Toolbar section --%>
@@ -98,41 +105,41 @@
     </tr>
     </thead>
     <tbody id="project-table-body">
-        {{#each projects}}
-        <tr class="item-row" data-index="{{@index}}">
-            <td>{{id}}</td>
-            <td title="创建时间：{{date createdOn}}，更新时间：{{date updatedOn}}">{{name}}</td>
-            <td>
-                {{#if syllabus}}
-                    {{syllabus.level}} ({{syllabus.version}})
-                {{/if}}
-            </td>
-            <td>{{facilitator.username}}</td>
-            <td>
-                {{#if status.start}}
-                    <span class="label-lg label-success">{{status.name}}</span>
-                {{else if status.finish}}
-                    <span class="label-lg label-danger">{{status.name}}</span>
-                {{else}}
-                    <span>{{status.name}}</span>
-                {{/if}}
-            </td>
-            <td>{{date startDate format='LL' }}</td>
-            <td>{{date finishDate format='LL'}}</td>
-            <td>{{date exportedOn format='LLL'}}</td>
-            <td>{{exportedBy.fullName}}</td>
-            <td>
-<%--                {{#if status.finish}}
-                <i class="glyphicon glyphicon-off" title="项目已结束，不能编辑！"></i>
-                {{else}}
-                <a href="#" class="edit-item"><i class="glyphicon glyphicon-edit"></i></a>
-                {{/if}}--%>
-                <a href="#" class="edit-item" title="编辑项目"><i class="glyphicon glyphicon-edit"></i></a>
-                <a href="#" class="view-item" title="查看项目详情"><i class="glyphicon glyphicon-file"></i></a>
-                <a href="#" class="export-item" title="导出项目"><i class="glyphicon glyphicon-export"></i></a>
-            </td>
-        </tr>
-        {{/each}}
+    {{#each projects}}
+    <tr class="item-row" data-index="{{@index}}">
+        <td>{{id}}</td>
+        <td title="创建时间：{{date createdOn}}，更新时间：{{date updatedOn}}">{{name}}</td>
+        <td>
+            {{#if syllabus}}
+            {{syllabus.level}} ({{syllabus.version}})
+            {{/if}}
+        </td>
+        <td>{{facilitator.username}}</td>
+        <td>
+            {{#if status.start}}
+            <span class="label-lg label-success">{{status.name}}</span>
+            {{else if status.finish}}
+            <span class="label-lg label-danger">{{status.name}}</span>
+            {{else}}
+            <span>{{status.name}}</span>
+            {{/if}}
+        </td>
+        <td>{{date startDate format='LL' }}</td>
+        <td>{{date finishDate format='LL'}}</td>
+        <td>{{date exportedOn format='LLL'}}</td>
+        <td>{{exportedBy.fullName}}</td>
+        <td>
+            <%--                {{#if status.finish}}
+                            <i class="glyphicon glyphicon-off" title="项目已结束，不能编辑！"></i>
+                            {{else}}
+                            <a href="#" class="edit-item"><i class="glyphicon glyphicon-edit"></i></a>
+                            {{/if}}--%>
+            <a href="#" class="edit-item" title="编辑项目"><i class="glyphicon glyphicon-edit"></i></a>
+            <a href="#" class="view-item" title="查看项目详情"><i class="glyphicon glyphicon-file"></i></a>
+            <a href="#" class="export-item" title="导出项目"><i class="glyphicon glyphicon-export"></i></a>
+        </td>
+    </tr>
+    {{/each}}
     </tbody>
 </script>
 
