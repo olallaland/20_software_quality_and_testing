@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created with IntelliJ IDEA.
  * User: Jian-Min Gao []
  * Date: 2015/2/4
@@ -117,7 +117,10 @@
                         if (_.isBoolean(result) && !result) {//form is invalid
                             return false;
                         }
-
+   if(document.getElementById("qa-comment").value.toString().length>150){
+                            window.alert("输入内容不能超过150字");
+                            return false;
+                        }
                         result.done(wrapUp);
                         $( this ).dialog( "close" );
                         $( this ).dialog( "destroy" ).remove();
