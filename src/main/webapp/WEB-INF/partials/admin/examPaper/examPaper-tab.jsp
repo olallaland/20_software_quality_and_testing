@@ -1,4 +1,6 @@
-<%--
+<%@ page import="cn.cstqb.exam.testmaker.actions.examPaper.LoadPaper" %>
+<%@ page import="cn.cstqb.exam.testmaker.actions.examPaper.Paper" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: lanping
   Date: 2020/4/10
@@ -81,76 +83,105 @@
         </fieldset>
     </form>
 
-    <table id="project-table" class="table table-bordered table-striped table-responsive table-hover">
+<%--    <table id="project-table" class="table table-bordered table-striped table-responsive table-hover">--%>
 
+<%--    </table>--%>
+    <%
+        LoadPaper lp = new LoadPaper();
+        lp.execute();
+        List<Paper> papers = lp.getPapers();
+
+    %>
+
+    <table class="table table-bordered table-striped table-responsive table-hover">
+        <tr>
+            <td>试卷编号</td>
+            <td>试卷名称</td>
+            <td>状态码</td>
+            <td>大纲</td>
+            <td>主持人</td>
+        </tr>
+        <%
+            for(Paper paper: papers){
+        %>
+            <tr>
+                <td><%=paper.id%>></td>
+                <td><%=paper.name%>></td>
+                <td><%=paper.status%>></td>
+                <td><%=paper.syllabus%>></td>
+                <td><%=paper.facilitator%>></td>
+            </tr>
+        <%
+            }
+        %>
     </table>
 </div>
 
 
-<div>
-</div>
-<script id="project-data-template" type="text/x-handlebars-template">
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>项目名</th>
-        <th>大纲</th>
-        <th>主持人</th>
-        <th>状态</th>
-        <th>开始日期</th>
-        <th>结束日期</th>
-        <th>导出时间</th>
-        <th>导出人</th>
-        <th class="action-col-3"></th>
-    </tr>
-    </thead>
-    <tbody id="project-table-body">
-    {{#each projects}}
-    <tr class="item-row" data-index="{{@index}}">
-        <td>{{id}}</td>
-        <td title="创建时间：{{date createdOn}}，更新时间：{{date updatedOn}}">{{name}}</td>
-        <td>
-            {{#if syllabus}}
-            {{syllabus.level}} ({{syllabus.version}})
-            {{/if}}
-        </td>
-        <td>{{facilitator.username}}</td>
-        <td>
-            {{#if status.start}}
-            <span class="label-lg label-success">{{status.name}}</span>
-            {{else if status.finish}}
-            <span class="label-lg label-danger">{{status.name}}</span>
-            {{else}}
-            <span>{{status.name}}</span>
-            {{/if}}
-        </td>
-        <td>{{date startDate format='LL' }}</td>
-        <td>{{date finishDate format='LL'}}</td>
-        <td>{{date exportedOn format='LLL'}}</td>
-        <td>{{exportedBy.fullName}}</td>
-        <td>
-            <%--                {{#if status.finish}}
-                            <i class="glyphicon glyphicon-off" title="项目已结束，不能编辑！"></i>
-                            {{else}}
-                            <a href="#" class="edit-item"><i class="glyphicon glyphicon-edit"></i></a>
-                            {{/if}}--%>
-            <a href="#" class="edit-item" title="编辑项目"><i class="glyphicon glyphicon-edit"></i></a>
-            <a href="#" class="view-item" title="查看项目详情"><i class="glyphicon glyphicon-file"></i></a>
-            <a href="#" class="export-item" title="导出项目"><i class="glyphicon glyphicon-export"></i></a>
-        </td>
-    </tr>
-    {{/each}}
-    </tbody>
-</script>
+<%--<div>--%>
+<%--</div>--%>
+<%--<script id="project-data-template" type="text/x-handlebars-template">--%>
+<%--    <thead>--%>
+<%--    <tr>--%>
+<%--        <th>ID</th>--%>
+<%--        <th>项目名</th>--%>
+<%--        <th>大纲</th>--%>
+<%--        <th>主持人</th>--%>
+<%--        <th>状态</th>--%>
+<%--        <th>开始日期</th>--%>
+<%--        <th>结束日期</th>--%>
+<%--        <th>导出时间</th>--%>
+<%--        <th>导出人</th>--%>
+<%--        <th class="action-col-3"></th>--%>
+<%--    </tr>--%>
+<%--    </thead>--%>
+<%--    <tbody id="project-table-body">--%>
+<%--    {{#each projects}}--%>
+<%--    <tr class="item-row" data-index="{{@index}}">--%>
+<%--        <td>{{id}}</td>--%>
+<%--        <td title="创建时间：{{date createdOn}}，更新时间：{{date updatedOn}}">{{name}}</td>--%>
+<%--        <td>--%>
+<%--            {{#if syllabus}}--%>
+<%--            {{syllabus.level}} ({{syllabus.version}})--%>
+<%--            {{/if}}--%>
+<%--        </td>--%>
+<%--        <td>{{facilitator.username}}</td>--%>
+<%--        <td>--%>
+<%--            {{#if status.start}}--%>
+<%--            <span class="label-lg label-success">{{status.name}}</span>--%>
+<%--            {{else if status.finish}}--%>
+<%--            <span class="label-lg label-danger">{{status.name}}</span>--%>
+<%--            {{else}}--%>
+<%--            <span>{{status.name}}</span>--%>
+<%--            {{/if}}--%>
+<%--        </td>--%>
+<%--        <td>{{date startDate format='LL' }}</td>--%>
+<%--        <td>{{date finishDate format='LL'}}</td>--%>
+<%--        <td>{{date exportedOn format='LLL'}}</td>--%>
+<%--        <td>{{exportedBy.fullName}}</td>--%>
+<%--        <td>--%>
+<%--            &lt;%&ndash;                {{#if status.finish}}--%>
+<%--                            <i class="glyphicon glyphicon-off" title="项目已结束，不能编辑！"></i>--%>
+<%--                            {{else}}--%>
+<%--                            <a href="#" class="edit-item"><i class="glyphicon glyphicon-edit"></i></a>--%>
+<%--                            {{/if}}&ndash;%&gt;--%>
+<%--            <a href="#" class="edit-item" title="编辑项目"><i class="glyphicon glyphicon-edit"></i></a>--%>
+<%--            <a href="#" class="view-item" title="查看项目详情"><i class="glyphicon glyphicon-file"></i></a>--%>
+<%--            <a href="#" class="export-item" title="导出项目"><i class="glyphicon glyphicon-export"></i></a>--%>
+<%--        </td>--%>
+<%--    </tr>--%>
+<%--    {{/each}}--%>
+<%--    </tbody>--%>
+<%--</script>--%>
 
-<script id="facilitator-option-list-template" type="text/x-handlebars-template">
-    {{#each users}}
-    <option value="{{id}}" data-index="{{@index}}" title="{{email}}" class="option-item">{{username}}</option>
-    {{/each}}
-</script>
+<%--<script id="facilitator-option-list-template" type="text/x-handlebars-template">--%>
+<%--    {{#each users}}--%>
+<%--    <option value="{{id}}" data-index="{{@index}}" title="{{email}}" class="option-item">{{username}}</option>--%>
+<%--    {{/each}}--%>
+<%--</script>--%>
 
-<script id="project-status-list-template" type="text/x-handlebars-template">
-    {{#each statuses}}
-    <option value="{{id}}" data-index="{{@index}}" class="option-item">{{name}}</option>
-    {{/each}}
-</script>
+<%--<script id="project-status-list-template" type="text/x-handlebars-template">--%>
+<%--    {{#each statuses}}--%>
+<%--    <option value="{{id}}" data-index="{{@index}}" class="option-item">{{name}}</option>--%>
+<%--    {{/each}}--%>
+<%--</script>--%>

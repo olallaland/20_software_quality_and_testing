@@ -8,7 +8,11 @@
     <constant name="struts.convention.package.locators" value="action,actions,struts,struts2"/>
     <package name="examPaper-actions" namespace="/web/paper" extends="default-auth">
         <action name="load" class="cn.cstqb.exam.testmaker.actions.examPaper.CreateExamPaperAction" method="execute"/>
-        <action name="update" class="cn.cstqb.exam.testmaker.actions.examPaper.UpdatePaper" method="execute"/>
+<!--        <action name="update" class="cn.cstqb.exam.testmaker.actions.examPaper.UpdatePaper" method="execute">-->
+<!--        <result name="error">-->
+<!--            /tm/web/admin/welcome.action#projects.action-->
+<!--        </result>-->
+<!--        </action>-->
 
 <!--        <action name="checkName" class="cn.cstqb.exam.testmaker.actions.projects.CheckNameProjectAction" />-->
 <!--        <action name="create" class="cn.cstqb.exam.testmaker.actions.projects.CreateProjectAction" />-->

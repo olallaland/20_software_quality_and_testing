@@ -1,51 +1,57 @@
 package cn.cstqb.exam.testmaker.actions.examPaper;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-
+import java.sql.*;
+import java.sql.Date;
 import com.opensymphony.xwork2.ActionSupport;
 public class UpdatePaper extends ActionSupport{
     private String name;
     private int status_id;
     private int syllabus_id;
     private int facilitator_id;
-
+    private String startDate;
+    private String finishDate;
     public String execute() {
-        String ret = ERROR;
-        Connection conn = null;
+        System.out.println("---------------------------: name: " + name + " status_id: " + status_id + " syllabus_id: "+syllabus_id+" facilitator_id: "+facilitator_id);
+        System.out.println("---------------------------: startDate: " + startDate + " finishDate: " + finishDate);
 
-        System.out.println("---------------------------------------------------------: ");
-        System.out.println("---------------------------------------------------------: name: " + name + " status_id: " + status_id + " syllabus_id: "+syllabus_id+" facilitator_id: "+facilitator_id);
+        String ret = ERROR;
+        Connection conn = DBConnect.getConn();
+        Statement state = null;
+        ResultSet rs = null;
+
         try {
-            String URL = "jdbc:mysql://localhost:3306/testmaker";
-            Class.forName("com.mysql.jc.jdbc.Driver");
-            conn = DriverManager.getConnection(URL, "root", "fudansoft@82");
+            //sql语句，判断account表中是否有对应的username和password
+            System.out.println("3. ------------------------------: 设置成功" );
             String sql = "INSERT INTO examPaper(name, status_id, syllabus_id,facilitator_id) VALUES (?,?,?,?)";
             //sql+=" user = ? AND password = ?";
             PreparedStatement ps = conn.prepareStatement(sql);
+            System.out.println("4. ------------------------------: 设置成功" );
             ps.setString(1, name);
             ps.setInt(2, status_id);
             ps.setInt(3, syllabus_id);
             ps.setInt(4, facilitator_id);
+            System.out.println("1. ------------------------------: 设置成功" );
             //ResultSet rs = ps.executeQuery();
             ps.executeUpdate();
+            System.out.println("2. ------------------------------: 执行成功" );
 //            while (rs.next()) {
 //                name = rs.getString(1);
 //                ret = SUCCESS;
 //            }
             ret = SUCCESS;
+
         } catch (Exception e) {
             ret = ERROR;
+            e.printStackTrace();
+
         } finally {
-            if (conn != null) {
-                try {
-                    conn.close();
-                } catch (Exception e) {
-                }
-            }
+            DBConnect.close(rs, state, conn);
         }
+
+        System.out.println("---------------------------------------------------------: " + ret);
+
+
+
         return ret;
     }
 
