@@ -11,6 +11,9 @@
     </package>
 
     <package name="project-actions-logged-in" namespace="/web/project/current" extends="default-auth">
+
+        <action name="make-paper" class="cn.cstqb.exam.testmaker.actions.projects.current.MakePaper" />
+        <action name="list-questions-in-paper" class="cn.cstqb.exam.testmaker.actions.projects.current.ListQuestionsInPaper" />
         <action name="get" class="cn.cstqb.exam.testmaker.actions.projects.current.GetCurrentProjectAction" />
         <action name="list-questions" class="cn.cstqb.exam.testmaker.actions.projects.current.ListQuestions" />
         <action name="paging" class="cn.cstqb.exam.testmaker.actions.projects.current.ListQuestions" method="paging" />

@@ -2,19 +2,24 @@ package cn.cstqb.exam.testmaker.actions.auth;
 
 import cn.cstqb.exam.testmaker.actions.BaseAction;
 import cn.cstqb.exam.testmaker.configuration.Constants;
+import cn.cstqb.exam.testmaker.entities.Exampaper;
 import cn.cstqb.exam.testmaker.entities.Project;
 import cn.cstqb.exam.testmaker.entities.User;
+import cn.cstqb.exam.testmaker.services.IPaperService;
 import cn.cstqb.exam.testmaker.services.IProjectService;
 import cn.cstqb.exam.testmaker.services.IUserService;
 import com.google.inject.Inject;
 
 import java.util.Date;
+import java.util.List;
 
 public class LoginAction extends BaseAction {
     @Inject
     private IProjectService projectService;
     @Inject
     private IUserService userService;
+    @Inject
+    private IPaperService paperService;
     private int projectId;
 
     public LoginAction() {
@@ -51,6 +56,11 @@ public class LoginAction extends BaseAction {
         Project project = projectService.find(projectId);
         session.put(Constants.ATTR_PROJECT, project);
         session.put(Constants.ATTR_FACILITATOR, project.getFacilitator().getUsername().equalsIgnoreCase(loggedInUser.getUsername()));
+
+        List<Exampaper> exampapers=paperService.findByFacilitator(loggedInUser.getId());
+        if(exampapers.size()>0){
+            session.put(Constants.ATTR_EXAMPAPER,exampapers.get(0));
+        }
         return null;
     }
 

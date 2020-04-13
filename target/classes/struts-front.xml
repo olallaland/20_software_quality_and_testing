@@ -67,6 +67,10 @@
         <action name="item-create">
             <result name="success">/WEB-INF/pages/question/item-create.jsp</result>
         </action>
+
+        <action name="paper-management">
+            <result name="success">/WEB-INF/pages/client/paper-management.jsp</result>
+        </action>
     </package>
 
     <package name="debugInit" namespace="/web/client" extends="default">

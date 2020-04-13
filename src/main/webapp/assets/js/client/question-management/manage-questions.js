@@ -58,7 +58,10 @@
     /*
      * Default function when the page loads
      */
+
     initialize();
+
+
 
     /**
      * Page initialization

@@ -12,7 +12,9 @@
     </ul>
 </s:if>
 <ul class="nav nav-pills nav-stacked">
-    <%--<li role="presentation" id="item-create" ><a href="item-create.action" class="nav-menu-item">出题</a></li>--%>
+    <s:if test="%{#session.EXAMPAPER}">
+        <li role="presentation" ><a href="paper-management.action" class="nav-menu-item">试卷生成</a></li>
+    </s:if>
     <li role="presentation" ><a href="question-authoring.action" class="nav-menu-item">编辑任务</a></li>
     <li role="presentation" ><a href="question-reviewing.action" class="nav-menu-item">评审任务</a></li>
     <li role="presentation" ><a href="question-qa.action" class="nav-menu-item">再审任务</a></li>

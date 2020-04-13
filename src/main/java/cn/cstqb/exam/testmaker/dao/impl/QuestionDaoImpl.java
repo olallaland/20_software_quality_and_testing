@@ -1,13 +1,11 @@
 package cn.cstqb.exam.testmaker.dao.impl;
 
 import cn.cstqb.exam.testmaker.dao.QuestionDao;
-import cn.cstqb.exam.testmaker.entities.Project;
-import cn.cstqb.exam.testmaker.entities.Question;
-import cn.cstqb.exam.testmaker.entities.QuestionStatus;
-import cn.cstqb.exam.testmaker.entities.User;
+import cn.cstqb.exam.testmaker.entities.*;
 import com.google.inject.persist.Transactional;
 
 import javax.persistence.EntityManager;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -84,5 +82,15 @@ public class QuestionDaoImpl extends GenericJpaDaoImpl<Question, Integer> implem
         return findResultList("project", project);
     }
 
-
+    @Override
+    public List<Question> findRandomReleasedQuestion(QuestionType questionType,QuestionStatus questionStatus,int number){
+        //System.out.println(provider);
+        EntityManager em = provider.get();
+        List<Question> questions= em.createQuery("SELECT q from Question q WHERE q.type =:type AND q.status = :status ", Question.class)
+                .setParameter("type", questionType)
+                .setParameter("status", questionStatus)
+                .getResultList();
+        Collections.shuffle(questions);
+        return questions;
+    }
 }

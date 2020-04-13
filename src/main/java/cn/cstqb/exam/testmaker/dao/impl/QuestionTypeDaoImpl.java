@@ -2,6 +2,7 @@ package cn.cstqb.exam.testmaker.dao.impl;
 
 import cn.cstqb.exam.testmaker.dao.QuestionTypeDao;
 import cn.cstqb.exam.testmaker.entities.QuestionType;
+import com.google.inject.persist.Transactional;
 
 /**
  * Created with IntelliJ IDEA.
@@ -10,4 +11,5 @@ import cn.cstqb.exam.testmaker.entities.QuestionType;
  * Time: 3:00
  */
 public class QuestionTypeDaoImpl extends GenericJpaDaoImpl<QuestionType, Integer> implements QuestionTypeDao {
+
 }

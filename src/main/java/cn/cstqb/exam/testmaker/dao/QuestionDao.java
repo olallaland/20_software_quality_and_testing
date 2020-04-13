@@ -1,9 +1,6 @@
 package cn.cstqb.exam.testmaker.dao;
 
-import cn.cstqb.exam.testmaker.entities.Project;
-import cn.cstqb.exam.testmaker.entities.Question;
-import cn.cstqb.exam.testmaker.entities.QuestionStatus;
-import cn.cstqb.exam.testmaker.entities.User;
+import cn.cstqb.exam.testmaker.entities.*;
 
 import java.util.List;
 
@@ -55,4 +52,6 @@ public interface QuestionDao extends GenericDao<Question,Integer> {
     List<Question> findAll(Project project);
 
     List<Question> findByStatus(Project project, QuestionStatus status);
+
+    List<Question> findRandomReleasedQuestion(QuestionType questionType, QuestionStatus questionStatus, int number);
 }

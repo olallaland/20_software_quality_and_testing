@@ -17,6 +17,8 @@ public interface Constants {
     public static final String ATTR_PROJECT = "PROJECT";
     public static final String ATTR_RELEASE = "RELEASE";
     public static final String ATTR_FACILITATOR = "FACILITATOR";
+    public static final String ATTR_EXAMPAPER = "EXAMPAPER";
+
 
     public static final String RESULT_LOGIN_ADMIN = "admin.login.result";
     public static final String RESULT_LOGIN = "index.login.result";
