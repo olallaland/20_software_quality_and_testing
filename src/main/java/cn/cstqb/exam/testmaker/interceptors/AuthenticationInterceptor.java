@@ -52,6 +52,7 @@ public class AuthenticationInterceptor implements Interceptor {
 
         //check if user is authenticated
         if(!isAuthenticated(invocation)) {
+            System.out.println("认证失败————————————————————————————————————————————————————————————————————————————————");
             //get login url from request URL
             String result = null;
             if (requestURL.matches("/web/admin/?")||

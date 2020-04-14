@@ -100,6 +100,8 @@ AjaxUtils.getData = function (url, data) {
     return $.ajax(url, options)
         .done(function (data, textStatus, jqXHR) {
             console.log('Data loaded successfully!');
+            console.log("在ajax loaddata得到的project数据");
+            console.log(data);
             return false;
         })
         .error(function (jqXHR, textStatus, errorThrown) {

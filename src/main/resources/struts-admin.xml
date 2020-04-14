@@ -58,5 +58,9 @@
         <action name="question-status">
             <result name="success">/WEB-INF/pages/admin/questions.jsp</result>
         </action>
+
+        <action name="examPaper">
+            <result name="success">/WEB-INF/pages/admin/examPaper.jsp</result>
+        </action>
     </package>
 </struts>

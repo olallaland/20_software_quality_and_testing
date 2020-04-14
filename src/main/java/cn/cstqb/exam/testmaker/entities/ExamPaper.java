@@ -10,17 +10,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Jian-Min Gao
- * Date: 2014/12/27
- * Time: 17:18
- */
 @Entity
-public class Project extends AbstractBaseEntity {
-
-//    private int id;
-
+public class ExamPaper extends AbstractBaseEntity {
     @Column(nullable = false,unique = true)
     private String name;
 
@@ -63,7 +54,7 @@ public class Project extends AbstractBaseEntity {
     @OneToOne
     private User exportedBy;
 
-    public Project(String name, User facilitator, ProjectStatus status) {
+    public ExamPaper(String name, User facilitator, ProjectStatus status) {
         this.name = name;
         this.facilitator = facilitator;
         this.status = status;
@@ -73,11 +64,11 @@ public class Project extends AbstractBaseEntity {
 //        this.id = id;
 //    }
 
-    public Project(String name) {
+    public ExamPaper(String name) {
         this.name = name;
     }
 
-    public Project() {
+    public ExamPaper() {
     }
 
     public String getName() {
@@ -198,7 +189,7 @@ public class Project extends AbstractBaseEntity {
         if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
-        final Project other = (Project) obj;
+        final ExamPaper other = (ExamPaper) obj;
         return Objects.equals(this.name, other.name) && Objects.equals(this.facilitator, other.facilitator) && Objects.equals(this.status, other.status);
     }
 

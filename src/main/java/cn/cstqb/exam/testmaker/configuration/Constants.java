@@ -8,10 +8,6 @@ package cn.cstqb.exam.testmaker.configuration;
  */
 public interface Constants {
 
-    public static final int PUNLISH = 8;
-    public static final int Fail = 9;
-    public static final int MODIFY = 5;
-
     public static final String ATTR_USER = "USER";
     public static final String ATTR_ADMIN_USER = "ADMIN";
     public static final String ATTR_PROJECT = "PROJECT";

@@ -341,7 +341,7 @@
             wrapUpModal();
         });*/
         saveReviewComment();
-        return QuestionUtils.changeStatus(selectedQuestion.id,nextStatusId,currentUser,function () {
+        return QuestionUtils.changeStatus(selectedQuestion.id,nextStatusId,function () {
                 closeAndDestroyCommentDialog();
                 qaWindow.modal('hide');
                 wrapUpModal();

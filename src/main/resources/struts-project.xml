@@ -8,6 +8,17 @@
         <action name="checkName" class="cn.cstqb.exam.testmaker.actions.projects.CheckNameProjectAction" />
         <action name="create" class="cn.cstqb.exam.testmaker.actions.projects.CreateProjectAction" />
         <action name="list-*" class="cn.cstqb.exam.testmaker.actions.projects.ListProjectAction" method="{1}" />
+<!--        <action name="update" class="cn.cstqb.exam.testmaker.actions.projects.CreatePaperAction" method="execute"/>-->
+        <action name="update" class="cn.cstqb.exam.testmaker.actions.examPaper.UpdatePaper" method="execute">
+        <result name="error">
+            /tm/web/admin/welcome.action#projects.action
+        </result>
+        </action>
+        <action name="load" class="cn.cstqb.exam.testmaker.actions.examPaper.LoadPaper" method="execute">
+<!--        <result name="success" type="json">-->
+<!--            -->
+<!--        </result>-->
+        </action>
     </package>
 
     <package name="project-actions-logged-in" namespace="/web/project/current" extends="default-auth">
