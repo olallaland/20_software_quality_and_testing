@@ -1,7 +1,7 @@
 package cn.cstqb.exam.testmaker.actions.projects.current;
 
 import cn.cstqb.exam.testmaker.configuration.Constants;
-import cn.cstqb.exam.testmaker.entities.Exampaper;
+import cn.cstqb.exam.testmaker.entities.ExamPaper;
 import cn.cstqb.exam.testmaker.services.IPaperService;
 import cn.cstqb.exam.testmaker.services.impl.PaperServiceImpl;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -85,7 +85,7 @@ public class MakePaper extends BaseCurrentProjectAction {
     protected String doExecuteImpl() {
         logger.debug("MakePaper.doExecuteImpl: Make Paper: #0", "debug" );
         System.out.println(type1number);
-        result=paperService.makePaper((Exampaper) session.get(Constants.ATTR_EXAMPAPER),type1number,type2number,type3number);
+        result=paperService.makePaper((ExamPaper) session.get(Constants.ATTR_EXAMPAPER),type1number,type2number,type3number);
         return null;
     }
 

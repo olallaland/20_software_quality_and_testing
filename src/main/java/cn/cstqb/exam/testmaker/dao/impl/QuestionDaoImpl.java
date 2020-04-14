@@ -79,10 +79,11 @@ public class QuestionDaoImpl extends GenericJpaDaoImpl<Question, Integer> implem
     }
 
     @Override
-    public List<Question> findRandomReleasedQuestion(QuestionType questionType,QuestionStatus questionStatus,int number){
+    public List<Question> findRandomReleasedQuestion(Syllabus syllabus,QuestionType questionType,QuestionStatus questionStatus,int number){
         //System.out.println(provider);
         EntityManager em = provider.get();
-        List<Question> questions= em.createQuery("SELECT q from Question q WHERE q.type =:type AND q.status = :status ", Question.class)
+        List<Question> questions= em.createQuery("SELECT q from Question q WHERE q.project.syllabus=:syllabus AND q.type =:type AND q.status = :status ", Question.class)
+                .setParameter("syllabus",syllabus)
                 .setParameter("type", questionType)
                 .setParameter("status", questionStatus)
                 .getResultList();

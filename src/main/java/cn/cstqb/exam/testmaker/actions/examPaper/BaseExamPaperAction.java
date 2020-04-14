@@ -66,12 +66,12 @@ public abstract class BaseExamPaperAction extends AbstractPaginationAction{
         /*
          * If the status is not null, check if the status is valid or not
          */
-        if (examPaper.getStatus()!=null) {
-            if (!examPaper.getStatus().validate() || !examPaper.getStatus().isValidID()) {
-                addActionError(getText("error.project.status.invalid", Lists.newArrayList(examPaper.getStatus())));
-                return false;
-            }
-        }
+//        if (examPaper.getStatus()!=null) {
+//            if (!examPaper.getStatus().validate() || !examPaper.getStatus().isValidID()) {
+//                addActionError(getText("error.project.status.invalid", Lists.newArrayList(examPaper.getStatus())));
+//                return false;
+//            }
+//        }
 
         return true;
     }

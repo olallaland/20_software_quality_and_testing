@@ -49,7 +49,7 @@ public class DaoModule extends AbstractModule {
         bind(RoleDao.class).to(RoleDaoImpl.class);
 
 
-        bind(ExampaperDao.class).to(ExampaperDaoImpl.class);
-        bind(ExampaperQuestionsDao.class).to(ExampaperQuestionsDaoImpl.class);
+        bind(ExamPaperDao.class).to(ExamPaperDaoImpl.class);
+        bind(ExamPaperQuestionsDao.class).to(ExamPaperQuestionsDaoImpl.class);
     }
 }

@@ -2,7 +2,7 @@ package cn.cstqb.exam.testmaker.actions.auth;
 
 import cn.cstqb.exam.testmaker.actions.BaseAction;
 import cn.cstqb.exam.testmaker.configuration.Constants;
-import cn.cstqb.exam.testmaker.entities.Exampaper;
+import cn.cstqb.exam.testmaker.entities.ExamPaper;
 import cn.cstqb.exam.testmaker.entities.Project;
 import cn.cstqb.exam.testmaker.entities.User;
 import cn.cstqb.exam.testmaker.services.IPaperService;
@@ -57,7 +57,7 @@ public class LoginAction extends BaseAction {
         session.put(Constants.ATTR_PROJECT, project);
         session.put(Constants.ATTR_FACILITATOR, project.getFacilitator().getUsername().equalsIgnoreCase(loggedInUser.getUsername()));
 
-        List<Exampaper> exampapers=paperService.findByFacilitator(loggedInUser.getId());
+        List<ExamPaper> exampapers=paperService.findByFacilitator(loggedInUser.getId());
         if(exampapers.size()>0){
             session.put(Constants.ATTR_EXAMPAPER,exampapers.get(0));
         }

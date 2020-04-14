@@ -74,6 +74,9 @@
     </package>
 
     <package name="debugInit" namespace="/web/client" extends="default">
+        <action name="findPassword" class="cn.cstqb.exam.testmaker.actions.FindPasswordAction">
+            <result name="success">/WEB-INF/pages/returnPassword.jsp</result>
+        </action>
         <action name="debug-*" class="cn.cstqb.exam.testmaker.actions.init.DebugInitAction" method="{1}" />
     </package>
 </struts>

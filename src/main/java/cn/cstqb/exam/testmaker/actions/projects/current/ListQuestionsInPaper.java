@@ -1,7 +1,7 @@
 package cn.cstqb.exam.testmaker.actions.projects.current;
 
 import cn.cstqb.exam.testmaker.configuration.Constants;
-import cn.cstqb.exam.testmaker.entities.Exampaper;
+import cn.cstqb.exam.testmaker.entities.ExamPaper;
 import cn.cstqb.exam.testmaker.entities.Question;
 import cn.cstqb.exam.testmaker.services.IPaperService;
 import cn.cstqb.exam.testmaker.services.impl.PaperServiceImpl;
@@ -50,7 +50,7 @@ public class ListQuestionsInPaper extends BaseCurrentProjectAction {
     protected String doExecuteImpl() {
         logger.debug("ListPaperQuestions.doExecuteImpl: Loading questions for Paper: #0", "debug" );
 
-        questions = paperService.getPaperQuestions((Exampaper) session.get(Constants.ATTR_EXAMPAPER));
+        questions = paperService.getPaperQuestions((ExamPaper) session.get(Constants.ATTR_EXAMPAPER));
         //questions=questionService.findAll(sessionProject, pageSize, pageNumber);
         return null;
     }

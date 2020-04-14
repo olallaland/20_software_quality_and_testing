@@ -1,9 +1,9 @@
 package cn.cstqb.exam.testmaker.dao;
 
-import cn.cstqb.exam.testmaker.entities.Exampaper;
+import cn.cstqb.exam.testmaker.entities.ExamPaper;
 
 import java.util.List;
 
-public interface ExampaperDao extends GenericDao<Exampaper,Integer>{
-    List<Exampaper> findByFacilitator(int facilitator_id);
+public interface ExamPaperDao {
+    public List<ExamPaper> findByFacilitator(int facilitator_id);
 }

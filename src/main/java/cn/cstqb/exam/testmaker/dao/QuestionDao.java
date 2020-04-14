@@ -53,5 +53,5 @@ public interface QuestionDao extends GenericDao<Question,Integer> {
 
     List<Question> findByStatus(Project project, QuestionStatus status);
 
-    List<Question> findRandomReleasedQuestion(QuestionType questionType, QuestionStatus questionStatus, int number);
+    List<Question> findRandomReleasedQuestion(Syllabus syllabus,QuestionType questionType, QuestionStatus questionStatus, int number);
 }
