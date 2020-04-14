@@ -29,7 +29,7 @@
         initDatePicker();
 
         $('#project-tab-title').bind('show.bs.tab click', function (e) {
-            console.log('project tab clicked');
+            console.log('examPaper tab clicked');
             initialize();
         });
 
@@ -39,6 +39,7 @@
 //            statusList.select2({width: '100%'});
             new TableFilter(dataTable, searchBox);
             loadData();
+            //loadPaper();
             loadSyllabuses();
             loadActiveUsers();
             loadProjectStatuses();
@@ -162,14 +163,42 @@
         /**
          * Ajax action for save form via JSON object
          */
+        // function saveProject() {
+        //     var url = CONTEXT.ctx + '/web/project/create.action';
+        //     // console.log("查看创建项目的参数是怎么样的");
+        //     // console.log(selected);
+        //     var data = {
+        //         project: selected
+        //     };
+        //     AjaxUtils.postData(url, data).done(wrapUp);
+        // }
         function saveProject() {
-            var url = CONTEXT.ctx + '/web/project/create.action';
-            var data = {
-                project: selected
-            };
-            AjaxUtils.postData(url, data).done(wrapUp);
-        }
+            var url = CONTEXT.ctx + '/web/project/update.action';
+            // console.log("查看创建项目的参数是怎么样的");
 
+            var data = {
+                name: selected.name,
+                status_id: status.id,
+                syllabus_id: selected.syllabus.id,
+                facilitator_id: selected.facilitator.id,
+                startDate: selected.startDate,
+                finishDate: selected.finishDate
+            };
+            console.log("查看创建试卷的参数是怎么样的");
+            console.log(data);
+            console.log(url);
+            AjaxUtils.postData(url, data).done(wrapUp);
+            // $.ajax({
+            //     type: "post",
+            //     url: url,//需要用来处理ajax请求的action
+            //     data:data,
+            //     dataType:"json",//设置需要返回的数据类型
+            //     success:wrapUp,
+            //     error:function() {
+            //     alert("系统异常，请稍后重试！");
+            // }
+            // });
+        }
         /**
          * action for export projects
          * @param projectName
@@ -212,6 +241,9 @@
             selected.finishDate = DatePickerUtil.getDate(finishDateInput);
 
             console.log('updated model in bindToModel');
+            console.log(typeof selected.startDate);
+            console.log(status);
+            console.log(selected.facilitator.id);
             console.dir(selected);
         }
 
@@ -240,12 +272,15 @@
 
         /**
          * Load projects data
+         *
          */
         function loadData() {
             var url = CONTEXT.ctx + '/web/project/list.action';
             AjaxUtils.getData(url)
                 .done(function( data, textStatus, jqXHR ) {
                     projects=data.projects;
+                    // console.log("在loadData project的数据：");
+                    // console.log(data);
                     if (projects) {
                         console.log('%s projects loaded.', projects.length);
                         var source = $('#project-data-template').html();
@@ -256,10 +291,40 @@
                 });
         }
 
+
+        //本来是加载exampaper的，但是拿不到后端返回的数据，放弃，累了
+        // function loadPaper() {
+        //     var url = CONTEXT.ctx + '/web/project/load.action';
+        //     AjaxUtils.getData(url)
+        //         .done(function( data, textStatus, jqXHR ) {
+        //             //projects=data.projects;
+        //             console.log("在loadData project的数据：");
+        //             console.log(data);
+        //
+        //         });
+        //     // $.ajax({
+        //     //     type: "post",
+        //     //     url: url,//需要用来处理ajax请求的action
+        //     //     //data:data,
+        //     //     dataType:'application/json',//设置需要返回的数据类型
+        //     //     success: function(data){
+        //     //         console.log(data);
+        //     //
+        //     //     },
+        //     //     error:function() {
+        //     //     alert("系统异常，请稍后重试！");
+        //     // }
+        //     // });
+        // }
+
+
         function loadSyllabuses() {
             var url = CONTEXT.ctx + '/web/syllabus/list-active.action';
             var templatePath = CONTEXT.ctx + '/assets/templates/syllabus/syllabus-list-options.hbs.html';
                 $.get(url).done(function (data, textStatus, jqXHR) {
+                    //console.log('Data loaded successfully!');
+                    // console.log("在load 大纲得到的数据，大纲：");
+                    // console.log(data);
                 syllabuses=data.aaData;
                 AjaxUtils.getTemplateAjax(templatePath, function (template) {
                     syllabusSelectList.empty();

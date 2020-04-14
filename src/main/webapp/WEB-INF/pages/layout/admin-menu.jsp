@@ -7,5 +7,6 @@
         <li role="presentation"><a href="projects.action" class="nav-menu-item"><i class="glyphicon glyphicon-tasks"></i>项目管理</a></li>
         <li role="presentation"><a href="syllabus.action" class="nav-menu-item"><i class="glyphicon glyphicon-book"></i>大纲管理</a></li>
         <li role="presentation"><a href="question-status.action" class="nav-menu-item"><i class="glyphicon glyphicon-stats"></i>属性设置</a></li>
+        <li role="presentation"><a href="examPaper.action" class="nav-menu-item"><i class="glyphicon glyphicon-stats"></i>试卷管理</a></li>
     </ul>
 <script src="${ctx}/assets/js/sidebar-navigation.js"></script>

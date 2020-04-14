@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
@@ -27,7 +27,7 @@
 <div class="jumbotron jumbotron-bg">
     <div class="container">
         <h1>出题系统</h1>
-
+ <a href="/tm/web/client/getPasswordPage.action">忘记密码</a>
         <p/>
 
         <p>欢迎使用出题系统</p>
