@@ -1,9 +1,9 @@
+cn\cstqb\exam\testmaker\services\IExamPaperService.class
 cn\cstqb\exam\testmaker\dao\impl\ExampaperDaoImpl.class
 cn\cstqb\exam\testmaker\dao\impl\ExampaperQuestionsDaoImpl.class
-cn\cstqb\exam\testmaker\entities\Exampaper.class
-cn\cstqb\exam\testmaker\services\impl\PaperServiceImpl.class
+cn\cstqb\exam\testmaker\services\impl\ExamPaperServiceImpl.class
 cn\cstqb\exam\testmaker\dao\ExampaperDao.class
+cn\cstqb\exam\testmaker\entities\ExamPaper.class
 cn\cstqb\exam\testmaker\dao\ExampaperQuestionsDao.class
+cn\cstqb\exam\testmaker\entities\ExamPaperQuestions.class
 cn\cstqb\exam\testmaker\actions\projects\current\ListQuestionsInPaper.class
-cn\cstqb\exam\testmaker\services\IPaperService.class
-cn\cstqb\exam\testmaker\entities\ExampaperQuestions.class

@@ -13,9 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -65,6 +63,9 @@
       <find>alert</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
       <facet id="test-maker/invalid/JPA" />
@@ -90,6 +91,7 @@
     <servers />
   </component>
   <component name="ProjectId" id="1ZJ4PPrGjhx0j1okd0IK9VI7NS2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -134,6 +136,8 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="ToolWindowMulti Preview.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -156,7 +160,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -569,6 +573,8 @@
       <workItem from="1586651896776" duration="12598000" />
       <workItem from="1586670620499" duration="19407000" />
       <workItem from="1586738202997" duration="16792000" />
+      <workItem from="1586766494144" duration="314000" />
+      <workItem from="1586849593148" duration="330000" />
     </task>
     <task id="LOCAL-00001" summary="update table project_users while creating a project">
       <created>1431599223217</created>
@@ -757,6 +763,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <MESSAGE value="update table project_users while creating a project" />
     <MESSAGE value="no need to validate session project  while updating user information" />
     <MESSAGE value="serveral bugs fixed" />
@@ -798,34 +807,42 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="527" y="19" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586757132877" />
-    <state x="496" y="108" key="FileChooserDialogImpl" timestamp="1586756532292">
+    <state x="93" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586849740579">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="496" y="108" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586756532292" />
-    <state width="1483" height="319" key="GridCell.Tab.0.bottom" timestamp="1586758665249">
+    <state x="93" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1586849740579" />
+    <state x="371" y="108" key="DUMP_DIALOG_DIMENSION_KEY" timestamp="1586766787262">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="319" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586758665249" />
-    <state width="1483" height="319" key="GridCell.Tab.0.center" timestamp="1586758665249">
+    <state x="371" y="108" key="DUMP_DIALOG_DIMENSION_KEY/0.0.1536.824@0.0.1536.824" timestamp="1586766787262" />
+    <state x="496" y="108" key="FileChooserDialogImpl" timestamp="1586766751343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="319" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586758665249" />
-    <state width="1483" height="319" key="GridCell.Tab.0.left" timestamp="1586758665249">
+    <state x="496" y="108" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586766751343" />
+    <state width="1483" height="319" key="GridCell.Tab.0.bottom" timestamp="1586849891288">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="319" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586758665249" />
-    <state width="1483" height="319" key="GridCell.Tab.0.right" timestamp="1586758665249">
+    <state width="1483" height="319" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586849891288" />
+    <state width="1483" height="319" key="GridCell.Tab.0.center" timestamp="1586849891288">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="319" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586758665249" />
+    <state width="1483" height="319" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586849891288" />
+    <state width="1483" height="319" key="GridCell.Tab.0.left" timestamp="1586849891286">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="319" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586849891286" />
+    <state width="1483" height="319" key="GridCell.Tab.0.right" timestamp="1586849891288">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="319" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586849891288" />
     <state width="262" height="550" key="HiddenNamespacesPopup" timestamp="1586580985723">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="262" height="550" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1586580985723" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1586575881738">
+    <state x="121" y="0" key="SettingsEditor" timestamp="1586849926433">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586575881738" />
+    <state x="121" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586849926433" />
     <state x="624" y="282" width="379" height="292" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586756520739">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

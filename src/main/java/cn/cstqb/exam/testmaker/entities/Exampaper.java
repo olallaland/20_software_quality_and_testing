@@ -8,7 +8,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "exampaper")
-public class Exampaper extends AbstractBaseEntity{
+public class ExamPaper extends AbstractBaseEntity{
     @JsonIgnore
     private String custom_field1;
     @JsonIgnore

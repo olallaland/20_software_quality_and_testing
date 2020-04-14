@@ -2,10 +2,10 @@ package cn.cstqb.exam.testmaker.actions.auth;
 
 import cn.cstqb.exam.testmaker.actions.BaseAction;
 import cn.cstqb.exam.testmaker.configuration.Constants;
-import cn.cstqb.exam.testmaker.entities.Exampaper;
+import cn.cstqb.exam.testmaker.entities.ExamPaper;
 import cn.cstqb.exam.testmaker.entities.Project;
 import cn.cstqb.exam.testmaker.entities.User;
-import cn.cstqb.exam.testmaker.services.IPaperService;
+import cn.cstqb.exam.testmaker.services.IExamPaperService;
 import cn.cstqb.exam.testmaker.services.IProjectService;
 import cn.cstqb.exam.testmaker.services.IUserService;
 import com.google.inject.Inject;
@@ -19,7 +19,7 @@ public class LoginAction extends BaseAction {
     @Inject
     private IUserService userService;
     @Inject
-    private IPaperService paperService;
+    private IExamPaperService paperService;
     private int projectId;
 
     public LoginAction() {
@@ -57,9 +57,9 @@ public class LoginAction extends BaseAction {
         session.put(Constants.ATTR_PROJECT, project);
         session.put(Constants.ATTR_FACILITATOR, project.getFacilitator().getUsername().equalsIgnoreCase(loggedInUser.getUsername()));
 
-        List<Exampaper> exampapers=paperService.findByFacilitator(loggedInUser.getId());
-        if(exampapers.size()>0){
-            session.put(Constants.ATTR_EXAMPAPER,exampapers.get(0));
+        List<ExamPaper> examPapers =paperService.findByFacilitator(loggedInUser.getId());
+        if(examPapers.size()>0){
+            session.put(Constants.ATTR_EXAMPAPER, examPapers.get(0));
         }
         return null;
     }

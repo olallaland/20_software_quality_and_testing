@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "exampaper_questions")
-public class ExampaperQuestions extends AbstractEntity{
+public class ExamPaperQuestions extends AbstractEntity{
 
     private int exampaper_id;
 
