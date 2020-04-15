@@ -7,7 +7,9 @@ import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 import org.apache.struts2.json.annotations.JSON;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Created with IntelliJ IDEA.
@@ -66,6 +68,17 @@ public class ListQuestionsByRole extends BaseQuestionAction {
                 break;
             case QA:
                 this.questions = questionService.findByQA(project, username);
+                ArrayList<Integer> needFilterNum = new ArrayList<>();
+                for(int i = 0; i < this.questions.size(); i++){
+                    if(Objects.equals(username,this.questions.get(i).getQaUser1()) ||
+                            Objects.equals(username,this.questions.get(i).getQaUser2()) ||
+                            Objects.equals(username,this.questions.get(i).getQaUser3())){
+                        needFilterNum.add(i);
+                    }
+                }
+                for(int temp : needFilterNum){
+                    this.questions.remove(temp);
+                }
                 break;
         }
     }

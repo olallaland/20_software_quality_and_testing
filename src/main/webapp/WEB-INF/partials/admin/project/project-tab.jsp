@@ -35,6 +35,17 @@
                 <div class="col-md-1 check-indicator"></div>
             </div>
             <div class="form-group" >
+                <label for="project-alias" class="col-md-2 col-lg-1 control-label">项目别名</label>
+                <div class="col-md-3 col-lg-2">
+                    <input id="project-alias" type="text" name="alias" class="form-control" autofocus>
+                </div>
+                <label for="project-tag" class="col-md-2 col-lg-1 control-label">标签</label>
+                <div class="col-md-3 col-lg-2">
+                    <input type="text" id="project-tag" name="tag" class="form-control" autofocus>
+                </div>
+                <div class="col-md-1 check-indicator"></div>
+            </div>
+            <div class="form-group" >
                 <label for="project-syllabus-list" class="col-md-2 col-lg-1 control-label">对应大纲</label>
                 <div class="col-md-3 col-lg-2">
                     <select id="project-syllabus-list" name="syllabus" data-placeholder="选择大纲" data-live-search="true" class="select-list form-control" required>
@@ -87,6 +98,8 @@
     <tr>
         <th>ID</th>
         <th>项目名</th>
+        <th>项目别名</th>
+        <th>项目标签</th>
         <th>大纲</th>
         <th>主持人</th>
         <th>状态</th>
@@ -102,6 +115,8 @@
         <tr class="item-row" data-index="{{@index}}">
             <td>{{id}}</td>
             <td title="创建时间：{{date createdOn}}，更新时间：{{date updatedOn}}">{{name}}</td>
+            <td>{{alias}}</td>
+            <td>{{tag}}</td>
             <td>
                 {{#if syllabus}}
                     {{syllabus.level}} ({{syllabus.version}})

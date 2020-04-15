@@ -174,14 +174,14 @@
 <%--    </tbody>--%>
 <%--</script>--%>
 
-<%--<script id="facilitator-option-list-template" type="text/x-handlebars-template">--%>
-<%--    {{#each users}}--%>
-<%--    <option value="{{id}}" data-index="{{@index}}" title="{{email}}" class="option-item">{{username}}</option>--%>
-<%--    {{/each}}--%>
-<%--</script>--%>
+<script id="facilitator-option-list-template" type="text/x-handlebars-template">
+    {{#each users}}
+    <option value="{{id}}" data-index="{{@index}}" title="{{email}}" class="option-item">{{username}}</option>
+    {{/each}}
+</script>
 
-<%--<script id="project-status-list-template" type="text/x-handlebars-template">--%>
-<%--    {{#each statuses}}--%>
-<%--    <option value="{{id}}" data-index="{{@index}}" class="option-item">{{name}}</option>--%>
-<%--    {{/each}}--%>
-<%--</script>--%>
+<script id="project-status-list-template" type="text/x-handlebars-template">
+    {{#each statuses}}
+    <option value="{{id}}" data-index="{{@index}}" class="option-item">{{name}}</option>
+    {{/each}}
+</script>

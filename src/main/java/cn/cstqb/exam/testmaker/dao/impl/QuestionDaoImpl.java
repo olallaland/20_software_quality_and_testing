@@ -51,11 +51,15 @@ public class QuestionDaoImpl extends GenericJpaDaoImpl<Question, Integer> implem
 
 	@Override
 	public List<Question> findByQA(Project project, String username) {
-		EntityManager em = provider.get();
-		return em.createQuery("SELECT q from Question q WHERE q.qualityAdmin.username =:username AND q.project =:project AND q.status.accessibleByQualityAdmin = TRUE ", Question.class)
-			.setParameter("username", username)
-			.setParameter("project", project)
-			.getResultList();
+        EntityManager em = provider.get();
+        return em.createQuery("SELECT q FROM Question q JOIN q.qualityadmins qa WHERE qa.username =:username AND q.project =:project AND q.status.accessibleByQualityAdmin = TRUE",Question.class)
+                .setParameter("username", username)
+                .setParameter("project", project)
+                .getResultList();
+//		return em.createQuery("SELECT q from Question q WHERE q.qualityAdmin.username =:username AND q.project =:project AND q.status.accessibleByQualityAdmin = TRUE ", Question.class)
+//			.setParameter("username", username)
+//			.setParameter("project", project)
+//			.getResultList();
 	}
 
     @Override

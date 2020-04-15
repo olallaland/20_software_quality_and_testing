@@ -7,86 +7,196 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fbda22d-b3bf-491e-b5f3-9a53df1ce3f3" name="Default" comment="l">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/FindPasswordAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/auth/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/auth/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/examPaper/BaseExamPaperAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/examPaper/BaseExamPaperAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/examPaper/DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/examPaper/DBConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/projects/current/ListQuestionsInPaper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/projects/current/ListQuestionsInPaper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/projects/current/MakePaper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/projects/current/MakePaper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/dao/ExamPaperDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/dao/ExamPaperDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/dao/ExampaperQuestionsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/dao/ExamPaperQuestionsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/dao/QuestionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/dao/QuestionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/dao/impl/ExampaperDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/dao/impl/ExamPaperDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/dao/impl/ExampaperQuestionsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/dao/impl/ExamPaperQuestionsDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/question/ChangeQuestionStatusAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/question/ChangeQuestionStatusAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/question/ListQuestionsByRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/question/ListQuestionsByRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/configuration/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/configuration/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/dao/impl/QuestionDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/dao/impl/QuestionDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/entities/ExamPaper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/entities/ExamPaper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/entities/ExampaperQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/entities/ExamPaperQuestions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/guice/DaoModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/guice/DaoModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/services/IPaperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/services/IPaperService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/services/impl/ExamPaperServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/services/impl/PaperServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/services/impl/PaperServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/actions/auth/LoginAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/actions/auth/LoginAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/actions/projects/current/ListQuestions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/actions/projects/current/ListQuestions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/actions/projects/current/ListQuestionsInPaper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/actions/projects/current/ListQuestionsInPaper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/actions/projects/current/MakePaper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/actions/projects/current/MakePaper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/actions/projects/current/SaveProjectQuestion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/actions/projects/current/SaveProjectQuestion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/entities/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/entities/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/entities/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/entities/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/partials/admin/examPaper/examPaper-tab.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/partials/admin/examPaper/examPaper-tab.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/partials/admin/project/project-tab.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/partials/admin/project/project-tab.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/partials/client/project-management/project-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/partials/client/project-management/project-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/partials/client/question-management/new-question-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/partials/client/question-management/new-question-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/admin/project/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/admin/project/projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/client/question-management/manage-questions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/client/question-management/manage-questions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/client/question-qa/question-qa.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/client/question-qa/question-qa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/utils/question-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/utils/question-utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/templates/project-management/project-details-modal.hbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/templates/project-management/project-details-modal.hbs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/templates/questions/question-details-modal.hbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/templates/questions/question-details-modal.hbs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/templates/questions/question-list-table.hbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/templates/questions/question-list-table.hbs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/templates/questions/question-review-form.hbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/templates/questions/question-review-form.hbs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/templates/questions/question-review-modal.hbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/templates/questions/question-review-modal.hbs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/actions/examPaper/DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/actions/examPaper/DBConnect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/actions/question/ChangeQuestionStatusAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/actions/question/ChangeQuestionStatusAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/actions/question/ListQuestionsByRole$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/actions/question/ListQuestionsByRole$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/actions/question/ListQuestionsByRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/actions/question/ListQuestionsByRole.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/configuration/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/configuration/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/dao/ExampaperDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/dao/ExampaperDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/dao/ExampaperQuestionsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/dao/ExampaperQuestionsDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/dao/QuestionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/dao/QuestionDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/dao/impl/ExampaperDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/dao/impl/ExampaperDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/dao/impl/ExampaperQuestionsDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/dao/impl/ExampaperQuestionsDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/dao/impl/QuestionDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/dao/impl/QuestionDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/entities/Exampaper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/entities/Exampaper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/entities/ExampaperQuestions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/entities/ExampaperQuestions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/entities/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/entities/Project.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/entities/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/entities/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/guice/DaoModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/guice/DaoModule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/interceptors/AuthenticationInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/interceptors/AuthenticationInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/services/IPaperService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/services/IPaperService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/services/impl/PaperServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cstqb/exam/testmaker/services/impl/PaperServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/struts-admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/struts-admin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/struts-front.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/struts-front.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/struts-project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/struts-project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/struts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/admin/examPaper_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/admin/examPaper_jsp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/admin/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/admin/index_jsp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/admin/overview_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/admin/overview_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/admin/questions_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/admin/questions_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/admin/projects_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/admin/projects_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/admin/users_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/admin/users_jsp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/admin/welcome_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/admin/welcome_jsp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/client/index_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/client/index_jsp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/client/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/client/index_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/client/paper_002dmanagement_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/client/paper_002dmanagement_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/admin_002dmenu_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/admin_002dmenu_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/client/project_002dmanagement_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/client/project_002dmanagement_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/client/question_002dauthoring_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/client/question_002dauthoring_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/client/question_002dmanagement_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/client/question_002dmanagement_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/client/question_002dqa_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/client/question_002dqa_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/client/question_002dreviewing_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/client/question_002dreviewing_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/dashboard_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/dashboard_jsp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/admin_002dmenu_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/admin_002dmenu_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/baseLayout_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/baseLayout_jsp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/baseLayout_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/baseLayout_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/footer_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/footer_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/masthead_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/masthead_jsp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/menu_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/menu_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/toolbar_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/toolbar_jsp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/welcome_002dlayout_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/welcome_002dlayout_jsp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/welcome_002dlayout_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/layout/welcome_002dlayout_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/admin/question/language_002dtab_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/admin/question/language_002dtab_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/admin/question/status_002dtab_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/admin/question/status_002dtab_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/admin/question/transition_002dtab_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/admin/question/transition_002dtab_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/admin/question/type_002dtab_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/admin/question/type_002dtab_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/welcome_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/pages/welcome_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/admin/examPaper/examPaper_002dtab_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/admin/examPaper/examPaper_002dtab_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/admin/examPaper/examPaper_002dtab_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/admin/examPaper/examPaper_002dtab_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/admin/project/projectStatus_002dtab_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/admin/project/projectStatus_002dtab_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/admin/project/project_002dtab_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/admin/project/project_002dtab_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/admin/user/create_002duser_002dform_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/admin/user/create_002duser_002dform_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/client/dashboard_002dfacilitator_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/client/dashboard_002dfacilitator_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/client/dashboard_002duser_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/client/dashboard_002duser_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/client/project_002dmanagement/project_002dform_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/client/project_002dmanagement/project_002dform_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/client/question_002dauthoring/authoring_002dform_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/client/question_002dauthoring/authoring_002dform_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/client/question_002dauthoring/choice_002dtab_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/client/question_002dauthoring/choice_002dtab_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/client/question_002dauthoring/image_002dmgm_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/client/question_002dauthoring/image_002dmgm_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/client/question_002dmanagement/new_002dquestion_002dform_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/client/question_002dmanagement/new_002dquestion_002dform_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/client/review_002dform_002dtemplate_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/client/review_002dform_002dtemplate_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/client/review_002dlist_002dtemplate_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/client/review_002dlist_002dtemplate_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/pagination_002dsnippet_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/tm/org/apache/jsp/WEB_002dINF/partials/pagination_002dsnippet_jsp.java" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution />
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/client/question-authoring/question-authoring.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="526">
+              <caret line="253" column="38" selection-start-line="253" selection-start-column="38" selection-end-line="253" selection-end-column="38" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/struts-project.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-816" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/services/impl/QuestionServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="593">
+              <caret line="139" column="41" lean-forward="true" selection-start-line="139" selection-start-column="41" selection-end-line="139" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/dao/impl/QuestionDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="e#0#120#0" expanded="true" />
+                <element signature="e#0#136#0" expanded="true" />
+                <element signature="e#0#146#1" expanded="true" />
+                <element signature="e#0#72#0" expanded="true" />
+                <element signature="e#0#100#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/entities/Question.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="98" column="19" lean-forward="true" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
+              <folding>
+                <element signature="e#13261#13262#0" expanded="true" />
+                <element signature="e#13293#13294#0" expanded="true" />
+                <element signature="e#13344#13345#0" expanded="true" />
+                <element signature="e#13386#13387#0" expanded="true" />
+                <element signature="e#13420#13421#0" expanded="true" />
+                <element signature="e#13449#13450#0" expanded="true" />
+                <element signature="e#13494#13495#0" expanded="true" />
+                <element signature="e#13530#13531#0" expanded="true" />
+                <element signature="e#13564#13565#0" expanded="true" />
+                <element signature="e#13594#13595#0" expanded="true" />
+                <element signature="e#13640#13641#0" expanded="true" />
+                <element signature="e#13678#13679#0" expanded="true" />
+                <element signature="e#13712#13713#0" expanded="true" />
+                <element signature="e#13742#13743#0" expanded="true" />
+                <element signature="e#13788#13789#0" expanded="true" />
+                <element signature="e#13826#13827#0" expanded="true" />
+                <element signature="e#13860#13861#0" expanded="true" />
+                <element signature="e#13890#13891#0" expanded="true" />
+                <element signature="e#13936#13937#0" expanded="true" />
+                <element signature="e#13974#13975#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/question/ListQuestionsByRole.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="74">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/services/IQuestionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2482">
+              <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -99,9 +209,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>version</find>
-      <find>build</find>
-      <find>sendMailToQuestionUser</find>
       <find>sendMailToChangedUsers</find>
       <find>sendMailToFacilitator</find>
       <find>new-question-modal</find>
@@ -115,7 +222,6 @@
       <find>g</find>
       <find>getId</find>
       <find>proje</find>
-      <find>dataTable</find>
       <find>qaWindow</find>
       <find>qaWindowId</find>
       <find>再审</find>
@@ -123,15 +229,49 @@
       <find>initializeCommentDialog</find>
       <find>====</find>
       <find>sdh</find>
-      <find>===</find>
-      <find>==</find>
       <find>project-T</find>
       <find>project-tab</find>
       <find>alert</find>
+      <find>changeS</find>
+      <find>questionForm</find>
+      <find>click</find>
+      <find>dataTable</find>
+      <find>==</find>
+      <find>===</find>
+      <find>service==</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/partials/admin/examPaper/examPaper-tab.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.conf" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/examPaper/DBConnect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/entities/Project.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/entities/Question.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/configuration/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/question/ChangeQuestionStatusAction.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/templates/project-management/project-details-modal.hbs.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/templates/questions/question-details-modal.hbs.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/templates/questions/question-list-table.hbs.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/templates/questions/question-review-form.hbs.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/templates/questions/question-review-modal.hbs.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/partials/client/project-management/project-form.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/partials/client/question-management/new-question-form.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/js/admin/project/projects.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/js/client/question-qa/question-qa.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/js/utils/question-utils.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/partials/admin/project/project-tab.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/js/client/question-management/manage-questions.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/js/client/question-authoring/question-authoring.js" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/services/impl/QuestionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/dao/impl/QuestionDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/question/ListQuestionsByRole.java" />
+      </list>
+    </option>
   </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
@@ -153,9 +293,272 @@
         <option name="mavenHome" value="E:/tools/apache-maven-3.6.3" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectId" id="1ZJ4PPrGjhx0j1okd0IK9VI7NS2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="cstqb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="cstqb" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="cstqb" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="testmaker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="cstqb" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="testmaker" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="cstqb" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="testmaker" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="cstqb" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="testmaker" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="cstqb" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="testmaker" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="question-authoring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="question-qa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="project-management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20_software_quality_and_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -202,13 +605,14 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowMulti Preview.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
     <property name="dynamic.classpath" value="false" />
     <property name="editorconfig.notification" value="Applied .editorconfig settings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -224,7 +628,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -232,20 +636,26 @@
       <recent name="C:\Users\dell\Desktop\work\gitwork\20_software_quality_and_testing\src\main\webapp\WEB-INF\pages\client" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="Maven.tomcat-run">
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="com.intellij.database.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
       <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration default="true" type="AndroidRunConfigurationType">
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -259,6 +669,8 @@
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
       <option name="DEBUGGER_TYPE" value="Java" />
       <Java />
       <Profilers>
@@ -272,19 +684,20 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
+    <configuration default="true" type="AndroidTestRunConfigurationType">
       <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
       <option name="EXTRA_OPTIONS" value="" />
-      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
       <option name="DEBUGGER_TYPE" value="Java" />
       <Java />
       <Profilers>
@@ -295,6 +708,12 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -641,6 +1060,7 @@
       <workItem from="1586766494144" duration="314000" />
       <workItem from="1586849593148" duration="330000" />
       <workItem from="1586851843094" duration="161000" />
+      <workItem from="1586920619669" duration="8829000" />
     </task>
     <task id="LOCAL-00001" summary="update table project_users while creating a project">
       <created>1431599223217</created>
@@ -820,8 +1240,48 @@
     <option name="localTasksCounter" value="26" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8829000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info id="Persistence" side_tool="true" />
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="Web" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22520107" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.59970677" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
@@ -967,6 +1427,7 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/guice/WorkerModule.java</url>
           <line>2</line>
+          <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
@@ -977,5 +1438,284 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/examPaper/DBConnect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/entities/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5294">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="e#5403#5404#0" expanded="true" />
+            <element signature="e#5431#5432#0" expanded="true" />
+            <element signature="e#5473#5474#0" expanded="true" />
+            <element signature="e#5507#5508#0" expanded="true" />
+            <element signature="e#5537#5538#0" expanded="true" />
+            <element signature="e#5563#5564#0" expanded="true" />
+            <element signature="e#5601#5602#0" expanded="true" />
+            <element signature="e#5631#5632#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/partials/admin/examPaper/examPaper-tab.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="182" column="57" selection-start-line="182" selection-start-column="57" selection-end-line="182" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/question/QueryQuestionAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/question/ChangeQuestionStatusAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3604">
+          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+          <folding>
+            <element signature="e#3959#3960#0" expanded="true" />
+            <element signature="e#3990#3991#0" expanded="true" />
+            <element signature="e#4038#4039#0" expanded="true" />
+            <element signature="e#4078#4079#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/examPaper.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-865" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/configuration/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/templates/questions/choice-list-table.hbs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-772" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/templates/questions/question-details-modal.hbs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/templates/questions/question-list-table.hbs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/templates/questions/question-review-form.hbs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/templates/questions/question-review-modal.hbs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="62" column="41" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/templates/questions/review-form.hbs.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/client/question-management.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4036" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/client/question-qa.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/partials/client/project-management/project-form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/partials/client/question-management/new-question-form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="70" column="91" selection-start-line="70" selection-start-column="91" selection-end-line="70" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/admin/project/project-status.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/client/project-management/manage-project.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2040" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/client/question-qa/question-qa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="343" column="36" selection-start-line="343" selection-start-column="36" selection-end-line="343" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/templates/project-management/update-project-form.hbs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-549">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/utils/question-utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="246" column="107" selection-start-line="246" selection-start-column="107" selection-end-line="246" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/templates/project-management/project-details-modal.hbs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/projects.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-413" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/partials/admin/project/project-tab.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="118" column="28" selection-start-line="118" selection-start-column="28" selection-end-line="118" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/client/question-management/manage-questions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="329" selection-start-line="329" selection-end-line="330" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/admin/project/projects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="257" column="33" selection-start-line="257" selection-start-column="24" selection-end-line="257" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/struts-question.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1632" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/client/question-authoring/question-authoring.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="253" column="38" selection-start-line="253" selection-start-column="38" selection-end-line="253" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/struts-project.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-816" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/services/IQuestionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2482">
+          <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/entities/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="98" column="19" lean-forward="true" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
+          <folding>
+            <element signature="e#13261#13262#0" expanded="true" />
+            <element signature="e#13293#13294#0" expanded="true" />
+            <element signature="e#13344#13345#0" expanded="true" />
+            <element signature="e#13386#13387#0" expanded="true" />
+            <element signature="e#13420#13421#0" expanded="true" />
+            <element signature="e#13449#13450#0" expanded="true" />
+            <element signature="e#13494#13495#0" expanded="true" />
+            <element signature="e#13530#13531#0" expanded="true" />
+            <element signature="e#13564#13565#0" expanded="true" />
+            <element signature="e#13594#13595#0" expanded="true" />
+            <element signature="e#13640#13641#0" expanded="true" />
+            <element signature="e#13678#13679#0" expanded="true" />
+            <element signature="e#13712#13713#0" expanded="true" />
+            <element signature="e#13742#13743#0" expanded="true" />
+            <element signature="e#13788#13789#0" expanded="true" />
+            <element signature="e#13826#13827#0" expanded="true" />
+            <element signature="e#13860#13861#0" expanded="true" />
+            <element signature="e#13890#13891#0" expanded="true" />
+            <element signature="e#13936#13937#0" expanded="true" />
+            <element signature="e#13974#13975#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/services/impl/QuestionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="139" column="41" lean-forward="true" selection-start-line="139" selection-start-column="41" selection-end-line="139" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/dao/impl/QuestionDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#120#0" expanded="true" />
+            <element signature="e#0#136#0" expanded="true" />
+            <element signature="e#0#146#1" expanded="true" />
+            <element signature="e#0#72#0" expanded="true" />
+            <element signature="e#0#100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cstqb/exam/testmaker/actions/question/ListQuestionsByRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

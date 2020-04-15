@@ -12,7 +12,7 @@ public class DBConnect {
     static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://localhost:3306/testmaker?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true";
     static final String DB_USER = "root";
-    static final String DB_PASS = "998179Aa.7954";
+    static final String DB_PASS = "ddf681126";
 
     //创建连接
     public static Connection getConn() {

@@ -68,7 +68,7 @@
                             <%--</div>--%>
                             <label class="col-md-2 control-label">质管</label>
                             <div class="col-md-2">
-                                <select id="question-qa-list" name="qa" class="select-list user-select-list form-control" data-placeholder="选择质管">
+                                <select id="question-qa-list" name="qa" multiple="multiple" class="select-list user-select-list form-control" data-placeholder="选择质管">
                                     <option></option>
                                 </select>
                             </div>
