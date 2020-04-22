@@ -1,0 +1,6 @@
+projectKey=cn.cstqb.exam.testmaker
+serverUrl=http://localhost:9000
+serverVersion=6.5.0.27846
+dashboardUrl=http://localhost:9000/dashboard/index/cn.cstqb.exam.testmaker
+ceTaskId=AXGfTNV9xYej0NAmJo2E
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXGfTNV9xYej0NAmJo2E
